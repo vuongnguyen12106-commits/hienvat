@@ -40,13 +40,13 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
               
               <g transform="translate(60, 80)">
                 <rect x="-10" y="-10" width="420" height="150" fill="#fef3c7" fillOpacity="0.4" stroke="#d97706" strokeWidth="1" rx="4" />
-                <text x="200" y="30" textAnchor="middle" fill="#92400e" fontSize="20" fontFamily="serif" letterSpacing="4">
+                <text x="200" y="30" textAnchor="middle" fill="#92400e" fontSize="20" fontFamily="'Noto Serif TC', 'Lora', serif" letterSpacing="4">
                   {artifact.hanNom.originalText.slice(0, 36)}...
                 </text>
-                <text x="200" y="70" textAnchor="middle" fill="#78350f" fontSize="12" fontStyle="italic">
+                <text x="200" y="70" textAnchor="middle" fill="#78350f" fontSize="12" fontStyle="italic" fontFamily="'Be Vietnam Pro', sans-serif">
                   Phiên âm: "{artifact.hanNom.transliteration.slice(0, 50)}..."
                 </text>
-                <text x="200" y="105" textAnchor="middle" fill="#451a03" fontSize="11">
+                <text x="200" y="105" textAnchor="middle" fill="#451a03" fontSize="11" fontFamily="'Be Vietnam Pro', sans-serif">
                   Độ sâu nét khắc: 0.8mm - 1.2mm | Kỹ thuật khắc chìm (âm khắc) kim loại/đá
                 </text>
               </g>
@@ -112,10 +112,10 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
         {/* Blueprint Title Header */}
         <g transform="translate(30, 25)">
           <rect x="0" y="0" width="540" height="28" fill="#0f172a" rx="4" />
-          <text x="15" y="18" fill="#38bdf8" fontSize="11" fontWeight="bold" fontFamily="monospace">
+          <text x="15" y="18" fill="#38bdf8" fontSize="11" fontWeight="bold" fontFamily="'JetBrains Mono', monospace">
             BẢN SỐ HỒ SƠ KIỂM KÊ: {artifact.id} | {artifact.circular05.soDangKyBaoTang}
           </text>
-          <text x="525" y="18" textAnchor="end" fill="#94a3b8" fontSize="10" fontFamily="monospace">
+          <text x="525" y="18" textAnchor="end" fill="#94a3b8" fontSize="10" fontFamily="'JetBrains Mono', monospace">
             QUY CHUẨN ĐIỀU 14 TT05/2025
           </text>
         </g>
@@ -172,7 +172,7 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
             {/* Seal text footprint below */}
             <g transform="translate(60, 185)">
               <rect x="0" y="0" width="140" height="45" fill="#fee2e2" stroke="#dc2626" strokeWidth="1.5" rx="3" />
-              <text x="70" y="28" textAnchor="middle" fill="#dc2626" fontSize="13" fontWeight="bold" fontFamily="serif" letterSpacing="3">
+              <text x="70" y="28" textAnchor="middle" fill="#dc2626" fontSize="13" fontWeight="bold" fontFamily="'Noto Serif TC', 'Lora', serif" letterSpacing="3">
                 [ TRIỆN VĂN ]
               </text>
             </g>
@@ -222,7 +222,7 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
             <path d="M 85 35 C 90 70 95 85 70 120 C 35 160 40 210 65 245 L 155 245 C 180 210 185 160 150 120 C 125 85 130 70 135 35" fill="#f0f9ff" stroke="#0284c7" strokeWidth="2" />
             {/* Swan pattern placement */}
             <circle cx="110" cy="180" r="32" fill="#fef3c7" stroke="#d97706" strokeWidth="1" strokeDasharray="3 2" />
-            <text x="110" y="185" textAnchor="middle" fill="#0369a1" fontSize="10" fontWeight="bold">HỌA TIẾT THIÊN NGA</text>
+            <text x="110" y="185" textAnchor="middle" fill="#0369a1" fontSize="10" fontWeight="bold" fontFamily="'Be Vietnam Pro', sans-serif">HỌA TIẾT THIÊN NGA</text>
             <ellipse cx="110" cy="245" rx="45" ry="8" fill="none" stroke="#0284c7" strokeWidth="1.5" />
           </g>
         )}
@@ -237,9 +237,9 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
             <circle cx="35" cy="135" r="8" fill="none" stroke="#b45309" strokeWidth="2.5" />
             <circle cx="35" cy="200" r="8" fill="none" stroke="#b45309" strokeWidth="2.5" />
             {/* Dragons and characters */}
-            <text x="120" y="80" textAnchor="middle" fill="#92400e" fontSize="12" fontFamily="serif">嘉隆五年</text>
-            <text x="120" y="120" textAnchor="middle" fill="#92400e" fontSize="12" fontFamily="serif">金冊尊稱</text>
-            <text x="120" y="160" textAnchor="middle" fill="#78350f" fontSize="10">LÁ VÀNG DÁT MỎNG</text>
+            <text x="120" y="80" textAnchor="middle" fill="#92400e" fontSize="12" fontFamily="'Noto Serif TC', 'Lora', serif">嘉隆五年</text>
+            <text x="120" y="120" textAnchor="middle" fill="#92400e" fontSize="12" fontFamily="'Noto Serif TC', 'Lora', serif">金冊尊稱</text>
+            <text x="120" y="160" textAnchor="middle" fill="#78350f" fontSize="10" fontFamily="'Be Vietnam Pro', sans-serif">LÁ VÀNG DÁT MỎNG</text>
           </g>
         )}
 
@@ -253,7 +253,7 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
             <circle cx="100" cy="75" r="8" fill="#fef3c7" stroke="#b45309" strokeWidth="1" />
             <circle cx="210" cy="80" r="12" fill="#fef3c7" stroke="#b45309" strokeWidth="1" />
             <rect x="280" y="72" width="40" height="8" fill="#fef3c7" stroke="#b45309" strokeWidth="1" />
-            <text x="220" y="115" textAnchor="middle" fill="#334155" fontSize="10">HƠN 100 ĐỒ TUỲ TÁNG KIM KHÍ TRONG THÂN GỖ</text>
+            <text x="220" y="115" textAnchor="middle" fill="#334155" fontSize="10" fontFamily="'Be Vietnam Pro', sans-serif">HƠN 100 ĐỒ TUỲ TÁNG KIM KHÍ TRONG THÂN GỖ</text>
           </g>
         )}
 
@@ -263,7 +263,7 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
             <rect x="30" y="20" width="160" height="230" fill="#f8fafc" stroke="#0f766e" strokeWidth="2" rx="4" />
             <circle cx="110" cy="80" r="35" fill="#fef3c7" stroke="#b45309" strokeWidth="1.5" />
             <rect x="60" y="130" width="100" height="90" fill="#f1f5f9" stroke="#0d9488" strokeWidth="1" />
-            <text x="110" y="180" textAnchor="middle" fill="#334155" fontSize="11" fontWeight="bold">
+            <text x="110" y="180" textAnchor="middle" fill="#334155" fontSize="11" fontWeight="bold" fontFamily="'Be Vietnam Pro', sans-serif">
               {artifact.technicalDrawing.captionOverview}
             </text>
           </g>
@@ -276,7 +276,7 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
             <line x1="510" y1="90" x2="510" y2="330" markerStart="url(#arrow)" markerEnd="url(#arrow)" />
             <line x1="470" y1="90" x2="520" y2="90" stroke="#94a3b8" strokeDasharray="2 2" />
             <line x1="470" y1="330" x2="520" y2="330" stroke="#94a3b8" strokeDasharray="2 2" />
-            <text x="525" y="215" fill="#0284c7" fontSize="11" fontWeight="bold" fontFamily="monospace">
+            <text x="525" y="215" fill="#0284c7" fontSize="11" fontWeight="bold" fontFamily="'JetBrains Mono', monospace">
               H: {heightMm} mm
             </text>
 
@@ -286,7 +286,7 @@ export const ArtifactBlueprint: React.FC<Props> = ({ artifact, simulateMissingRi
                 <line x1="160" y1="365" x2="440" y2="365" markerStart="url(#arrow)" markerEnd="url(#arrow)" />
                 <line x1="160" y1="335" x2="160" y2="375" stroke="#94a3b8" strokeDasharray="2 2" />
                 <line x1="440" y1="335" x2="440" y2="375" stroke="#94a3b8" strokeDasharray="2 2" />
-                <text x="300" y="385" textAnchor="middle" fill="#0284c7" fontSize="11" fontWeight="bold" fontFamily="monospace">
+                <text x="300" y="385" textAnchor="middle" fill="#0284c7" fontSize="11" fontWeight="bold" fontFamily="'JetBrains Mono', monospace">
                   {diameterMm ? `Ø: ${diameterMm} mm` : `W: ${widthMm} mm`}
                 </text>
               </>

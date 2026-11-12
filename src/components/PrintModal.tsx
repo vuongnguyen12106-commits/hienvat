@@ -45,7 +45,7 @@ export const PrintModal: React.FC<Props> = ({ artifact, isOpen, onClose }) => {
         </div>
 
         {/* Printable Paper Document (A4 Styling) */}
-        <div className="p-8 md:p-12 overflow-y-auto bg-white text-slate-900 text-xs font-serif leading-relaxed print:p-0 print:overflow-visible">
+        <div className="p-8 md:p-12 overflow-y-auto bg-white text-slate-900 text-xs font-sans leading-relaxed print:p-0 print:overflow-visible">
           {/* Header Block: National Motto & Institution */}
           <div className="grid grid-cols-2 gap-4 pb-6 border-b border-slate-300">
             <div className="text-center space-y-1">

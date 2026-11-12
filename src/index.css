@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: 'Lora', 'Noto Serif', Georgia, Cambria, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+html,
+body {
+  font-family: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+  font-family: 'Lora', 'Noto Serif', Georgia, Cambria, serif !important;
+}
+
+.font-sans {
+  font-family: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
+
+.font-hannom {
+  font-family: 'Noto Serif TC', 'SimSun', 'Songti SC', 'Lora', serif !important;
+}
+
 @layer utilities {
   @keyframes fadeIn {
     from {
@@ -21,9 +51,14 @@
   body {
     background-color: white !important;
     color: black !important;
+    font-family: 'Be Vietnam Pro', sans-serif !important;
   }
 
-  header, footer, nav, button, .print\:hidden {
+  header,
+  footer,
+  nav,
+  button,
+  .print\:hidden {
     display: none !important;
   }
 
